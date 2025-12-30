@@ -12,8 +12,8 @@ const CalendarCard = () => {
     const collapsible = useCollapsible({ defaultOpen: false })
 
     return (
-        <Collapsible.RootProvider value={collapsible}>
-            <Box bg="white" borderRadius="lg" boxShadow="sm" overflow="hidden" minW="280px">
+        <Collapsible.RootProvider value={collapsible} w={{ base: "100%", lg: "280px" }}>
+            <Box bg="white" borderRadius="lg" boxShadow="sm" overflow="hidden">
                 <Collapsible.Trigger asChild>
                     <Flex p={4} justify="space-between" cursor="pointer">
                         <Box>

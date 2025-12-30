@@ -7,6 +7,7 @@ const AppButton = ({ icon, children, ...props }:any) => {
       size="sm"
       px={6}
       {...props}
+      rounded="md"
     >
       {icon && <Icon as={icon} mr={2} />}
       {children}

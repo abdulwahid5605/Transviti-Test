@@ -5,7 +5,7 @@ const AppSelect = ({ collection, placeholder, width = "160px" }:any) => {
     <Select.Root collection={collection} size="sm" width={width}>
       <Select.HiddenSelect />
       <Select.Control border="none">
-        <Select.Trigger>
+        <Select.Trigger border="none">
           <Select.ValueText placeholder={placeholder} />
         </Select.Trigger>
         <Select.IndicatorGroup>
