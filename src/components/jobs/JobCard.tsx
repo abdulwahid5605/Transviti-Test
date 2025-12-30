@@ -60,7 +60,12 @@ const JobCard = ({ sectionTitle, linkText, jobs }: any) => {
 
                             <HStack gap={1} align="flex-start" color="gray.500">
                                 <LuClock size={14} style={{ marginTop: "2px" }} />
-                                <Text fontSize="sm">{job.meta}</Text>
+                                <Text fontSize="sm" color="gray.500">
+                                    {job.meta.split("|")[0].trim()} |
+                                    <Text as="span" color="#0154AA" ml={1}>
+                                        {job.meta.split("|")[1].trim()}
+                                    </Text>
+                                </Text>
                             </HStack>
 
                             <HStack w="full" gap={2}>
